@@ -1,0 +1,3 @@
+moviepy==1.0.3
+readtime==1.1.1
+pyqt5==5.15.6
