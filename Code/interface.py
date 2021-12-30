@@ -1,5 +1,5 @@
 import sys
-from PyQt5 import QtWidgets
+from PyQt5 import QtGui, QtWidgets
 
 app: QtWidgets.QApplication = None
 window: QtWidgets.QWidget = None
@@ -10,6 +10,7 @@ def create_window():
     window = QtWidgets.QWidget()
     window.setWindowTitle("Instagram Reel Creator")
     window.setGeometry(0, 0, 800, 600)
+    window.setWindowIcon(QtGui.QIcon("Assets/icon.png"))
 
     screen = QtWidgets.QApplication.desktop().screenNumber(
         QtWidgets.QApplication.desktop().cursor().pos())
