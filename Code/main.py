@@ -1,4 +1,5 @@
-import interface
+# import interface
+import editor
 
 
 def main():
@@ -8,7 +9,7 @@ def main():
         "Content/content.txt",
     )
     reel = editor.create_reel(media)
-    editor.export_reel(reel)
+    editor.export_reel(reel, "Output/Reel.mp4")
     # interface.start_gui()
 
 
